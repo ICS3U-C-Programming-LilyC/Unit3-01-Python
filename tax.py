@@ -6,24 +6,25 @@
 
 import constants
 
+
 def main():
-  # Get user input for the subtotal.
-  subtotal = int(input("Enter your subtotal = $ ")) 
+    # Get user input for the subtotal.
+    subtotal = float(input("Enter your subtotal = $ "))
 
-  # Calculate the tax.
-  tax = subtotal * constants.HST
+    # Calculate the tax.
+    tax = subtotal * constants.HST
 
-  # Calculate the total.
-  total = subtotal + tax
+    # Calculate the total.
+    total = subtotal + tax
 
-  # Display the tax back to the user.
-  print("")
-  print("The tax would ben = ${:,.2f}".format(tax))
+    # Display the tax back to the user.
+    print("")
+    print("The tax would ben = ${:,.2f}".format(tax))
 
-  # Display the total back to the user.
-  print("")
-  print("The total cost is = ${:,.2f}".format(total))
+    # Display the total back to the user.
+    print("")
+    print("The total cost is = ${:,.2f}".format(total))
+
 
 if __name__ == "__main__":
     main()
-  
